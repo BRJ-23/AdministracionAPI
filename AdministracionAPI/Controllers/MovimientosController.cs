@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using AdministracionAPI;
 using AdministracionAPI.Data;
+using AdministracionAPI.Modelos;
 
 namespace AdministracionAPI.Controllers
 {

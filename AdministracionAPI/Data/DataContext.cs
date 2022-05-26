@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AdministracionAPI.Modelos;
+using Microsoft.EntityFrameworkCore;
 
 namespace AdministracionAPI.Data
 {
