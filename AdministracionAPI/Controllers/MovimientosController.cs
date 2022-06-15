@@ -50,6 +50,28 @@ namespace AdministracionAPI.Controllers
             return movimientos;
         }
 
+        // GET: api/Movimientos/Categoria
+        [HttpGet("/api/Categoria={idCategoria}-{mes}")]
+        public async Task<ActionResult<IEnumerable<Movimientos>>> GetMovimientosCategoria(int? idCategoria, int? mes)
+        {
+            if(idCategoria == null)
+            {
+                return NotFound();
+            }
+
+             var movimientos = await _context.Movimientos.Where(x => x.IdCategoria == idCategoria && x.Mes == mes).ToListAsync();
+
+            if(movimientos == null)
+            {
+                return NotFound();
+            }
+
+            return movimientos;
+           
+        }
+
+        
+
         // PUT: api/Movimientos/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
