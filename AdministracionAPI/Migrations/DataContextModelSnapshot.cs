@@ -176,8 +176,8 @@ namespace AdministracionAPI.Migrations
                     b.Property<int?>("UsuarioId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Valor")
-                        .HasColumnType("int");
+                    b.Property<double>("Valor")
+                        .HasColumnType("float");
 
                     b.HasKey("Id");
 

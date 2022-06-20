@@ -9,7 +9,7 @@ namespace AdministracionAPI
         [StringLength(50)]
         public string Nombre { get; set; } = string.Empty;
        
-        public int Valor { get; set; }
+        public double Valor { get; set; }
         
         public DateTime Fecha { get; set; }
         

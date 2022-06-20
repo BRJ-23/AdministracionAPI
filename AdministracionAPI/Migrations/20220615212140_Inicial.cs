@@ -88,7 +88,7 @@ namespace AdministracionAPI.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nombre = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Valor = table.Column<int>(type: "int", nullable: false),
+                    Valor = table.Column<double>(type: "float", nullable: false),
                     Fecha = table.Column<DateTime>(type: "datetime2", nullable: false),
                     IdUsuario = table.Column<int>(type: "int", nullable: false),
                     UsuarioId = table.Column<int>(type: "int", nullable: true),
